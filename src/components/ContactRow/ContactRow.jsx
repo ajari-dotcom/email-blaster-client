@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
-const ContactRow = ({ contact, onSave, shouldClearOnSave=false }) => {
+const ContactRow = ({ contact, onSave, shouldClearOnSave = false }) => {
   const [mode, setMode] = useState(contact ? "view" : "edit");
-  const getName = () => contact?.name ?? ""
-  const getPhone = () => contact?.phone ?? ""
-  const getEmail = () => contact?.email ?? ""
+  const getName = () => contact?.name ?? "";
+  const getPhone = () => contact?.phone ?? "";
+  const getEmail = () => contact?.email ?? "";
 
   const onEditClick = (e) => {
     e.preventDefault();
@@ -27,7 +27,7 @@ const ContactRow = ({ contact, onSave, shouldClearOnSave=false }) => {
 
     onSave(update);
     if (shouldClearOnSave) {
-        e.target.reset()
+      e.target.reset();
     }
   };
 
