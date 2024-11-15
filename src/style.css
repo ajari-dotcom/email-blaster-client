@@ -1,0 +1,12 @@
+.contact {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr;
+}
+
+.contact-row {
+  margin: 10px 5vw;
+}
+.contact-row form {
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr 1fr 1fr 1fr;
+}
